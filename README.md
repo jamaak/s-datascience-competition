@@ -1,4 +1,4 @@
-# Predicting Electric Vehicle Purchases 
+# Prediksi Tinggi Muka Air (TMA) — BBWS Bengawan Solo
 
 ---
 
@@ -24,8 +24,8 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/3oFiz4/Predicting-Electric-Vehicle-Purchases.git
-cd Predicting-Electric-Vehicle-Purchases
+git clone https://github.com/jamaak/s-datascience-competition.git
+cd s-datascience-competition
 ```
 
 ### 2. Create and activate a virtual environment
