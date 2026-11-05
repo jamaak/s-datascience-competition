@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and tool data
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Model artifacts and weights (prevent binary bloat in git)
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.h5
+*.safetensors
+model/*.pkl
+model/*.joblib
+model/*.pt
+
+# Large dataset caches (keep tracked data, ignore generated/temp data)
+data/processed/
+data/interim/
+*.parquet
+*.feather
+*.zip
+*.tar.gz
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+secrets.json
+
+# Operating System and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

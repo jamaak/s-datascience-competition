@@ -1,0 +1,7 @@
+# Set default behavior to automatically normalize line endings across OS (Windows/Mac/Linux)
+* text=auto eol=lf
+
+# Jupyter Notebook diff and merge settings
+*.ipynb filter=nbstripout
+*.ipynb diff=jupyternotebook
+*.ipynb merge=jupyternotebook

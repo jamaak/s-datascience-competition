@@ -1,0 +1,31 @@
+# See https://pre-commit.com for more information
+# Install hooks: pre-commit install
+# Run manually: pre-commit run --all-files
+
+repos:
+  # Standard hygiene checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+        exclude: '\.ipynb$'  # Notebooks are JSON but handled by nbstripout
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ['--maxkb=10000']
+
+  # Strip Jupyter Notebook outputs, execution counts, and volatile metadata
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout
+
+  # Ruff: Lightning-fast Python and Jupyter Notebook linter and formatter
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.10
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
