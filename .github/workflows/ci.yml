@@ -2,9 +2,9 @@ name: CI - Code Quality & Notebook Check
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   lint-and-format:
@@ -35,4 +35,4 @@ jobs:
       - name: Check Jupyter Notebooks are Clean (Outputs Stripped)
         run: |
           # Verify that nbstripout does not detect any unstripped outputs
-          nbstripout --is-stripped notebook/*.ipynb
+          nbstripout --verify notebook/*.ipynb

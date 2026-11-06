@@ -45,8 +45,8 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-# In notebooks, allow unused imports and non-top-level imports for interactive analysis
-"*.ipynb" = ["F401", "E402", "F841"]
+# In notebooks, allow unused imports, redefined functions, and interactive scripting constructs
+"*.ipynb" = ["F401", "E402", "F841", "F811", "E701", "E702"]
 
 [tool.ruff.format]
 quote-style = "double"
