@@ -28,8 +28,8 @@ target-version = "py310"
 line-length = 88
 indent-width = 4
 
-# Include both Python scripts and Jupyter Notebooks
-include = ["*.py", "*.pyi", "**/pyproject.toml", "*.ipynb"]
+# Include Python source files and project config
+include = ["*.py", "*.pyi", "**/pyproject.toml"]
 
 [tool.ruff.lint]
 select = [
